@@ -1,0 +1,14 @@
+# Primera máquina que se pide en la práctcia
+q0 q1 q2 q3
+a b .
+a b X .
+q0
+q2
+2
+q0 a . q0 a R X R
+q0 b . q1 b S . L
+q0 . . q2 . S . S
+q1 b X q1 b R X L
+q1 b . q2 b R . S
+q2 b . q2 b R . S
+q2 a . q3 a R . S

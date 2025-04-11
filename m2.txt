@@ -1,0 +1,24 @@
+q0 q1 q2 noA siA q3 qf
+a b .
+a b A B . 1 0
+q0
+qf
+3
+q0 b . . q0 b R . S B R
+q0 a . . q0 a R A R . S
+q0 . . . q1 . L . S . S
+q1 b . . q1 . L . S . S
+q1 a . . q1 . L . S . S
+q1 . . . q2 . R . L . L
+q2 . A B siA . S A S B S
+q2 . A . siA . S A S . S
+q2 . . . noA 0 R . S . S 
+q2 . . B noA 0 R . S B S
+siA . A B siA 1 R A L B S
+siA . A . siA 1 R A L B S
+siA . . B q3 . R . S B S
+siA . . . qf . S . S . S
+noA . . B q3 . R . S B S
+noA . . . qf . S . S . S
+q3 . . B q3 1 R . S B L
+q3 . . . qf . S . S . S
