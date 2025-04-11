@@ -26,10 +26,6 @@ string1
 string2
 ...
 
-pgsql
-Copy
-Edit
-
 ## Code Explanation
 
 There is a `utils` file where all external libraries, constants, and various data structures and utility functions like `split_string` are declared. It also includes data structures such as `symbol_movement`, which represents a symbol to be written on the tape and the movement of the head (right, left, or stop), and `transition_info`, which stores the transition function information.
