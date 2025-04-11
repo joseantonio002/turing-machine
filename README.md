@@ -1,4 +1,46 @@
-# Práctica 2 Máquina de Turing
+# Turing Machine
+
+## How to Use
+
+Compile using the command:  
+`g++ main.cc turing_machine.cc transition_function.cc tape.cc utils.cc -o main`  
+Once executed, it will ask for the name of the file with the Turing machine description and the name of the file with the strings to test the machine.
+
+## Turing Machine Description File Format
+
+\# comments  
+Set of states separated by spaces (q0 q1 q2...)  
+Input alphabet; if you want to include the empty string, represent it with "."  
+Tape alphabet  
+Initial state  
+Final states  
+Number of tapes  
+Transitions in the format:  
+`current_state symbol_read symbol_read_tape2 ... next_state write_tape1 move_tape1 ...`
+
+Make sure not to leave empty rows at the end of the file and check for spaces.
+
+## Strings File Format
+
+string1
+string2
+...
+
+pgsql
+Copy
+Edit
+
+## Code Explanation
+
+There is a `utils` file where all external libraries, constants, and various data structures and utility functions like `split_string` are declared. It also includes data structures such as `symbol_movement`, which represents a symbol to be written on the tape and the movement of the head (right, left, or stop), and `transition_info`, which stores the transition function information.
+
+We also have the `tape` class, which represents an infinite tape in both directions with three types of movements. It is implemented using two vectors and an integer `current_pos` that stores the position of the head on the tape.
+
+The `transition_function` class stores transitions using a vector of `transition_info`.
+
+
+
+# Máquina de Turing
 
 ## Como usar
 
